@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Subject Academy Learner</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tablet.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">Logo</h1>
+    <div class="menu-btn" onclick="toggleNav()">
+      <img src="images/menu.svg" alt="">
+    </div>
+  </header>
+  <main>
+    <div class="overlay"></div>
+    <nav class="nav">
+      <div class="nav-header">
+        <h3>Call us: <a class="phone-number" href="tel:+917880740260">+91 78807 40260</a></h3>
+        <div class="menu-btn" onclick="toggleNav()">
+          <img src="images/close.svg" alt="images/close.svg">
+        </div>
+      </div>
+      <div class="nav-body">
+        <ul class="nav-list">
+          <li class="nav-list-items active">Home</li>
+          <li class="nav-list-items">Courses</li>
+          <li class="nav-list-items">Notes</li>
+          <li class="nav-list-items">About Us</li>
+        </ul>
+        <button class="login-btn">Login/Register</button>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-body-container">
+          <h1 class="hero-heading">India's No. 1</h1>
+          <h2 class="hero-subheading">100% Free Education Platform</h2>
+        </div>
+        <div class="hero-img-container">
+          <img src="
+        images/default.png" alt="" class="hero-img">
+        </div>
+      </div>
+    </section>
+    <section class="courses-section">
+      <h1 class="section-heading">Explore Courses</h1>
+      <div class="courses-container">
+        <div class="course-tab-container">
+            <div class="courses" onclick="toggleCourse(this, 'cbse')" style="
+            border-bottom: none;">
+              <span class="course-name">👉&nbsp; CBSE Class 10</span>
+              <span class="tab-toggler">
+                <ion-icon name="add-outline"></ion-icon>
+              </span>
+            </div>
+            <div class="course-detail-container-small" id="cbse">
+              <span class="course-detail-container-heading-small">CBSE English Medium Class 10</span>
+              <div class="subject">
+                <div class="subject-image" style="
+                    background: url(images/physics.jpg);"></div>
+                <div class="subject-details">
+                  <span class="subject-name">Physics</span><span class="subject-teacher">By Shivansh Tripathi</span>
+                  <button class="watch-now-btn">WATCH NOW</button>
+                </div>
+              </div>
+              <div class="subject">
+                <div class="subject-image" style="
+                    background: url(images/chemistry.jpg);"></div>
+                <div class="subject-details">
+                  <span class="subject-name">Chemistry</span><span class="subject-teacher">By Shashank Tripathi</span>
+                  <button class="watch-now-btn">WATCH NOW</button>
+                </div>
+              </div>
+              <div class="subject">
+                <div class="subject-image" style="background: url(images/biology.webp);"></div>
+                <div class="subject-details">
+                  <span class="subject-name">Biology</span><span class="subject-teacher">By Shashank Tripathi</span>
+                  <button class="watch-now-btn">WATCH NOW</button>
+                </div>
+              </div>
+              <div class="subject">
+                <div class="subject-image" style="background: url(images/mathematics.webp);"></div>
+                <div class="subject-details">
+                  <span class="subject-name">Mathematics</span><span class="subject-teacher">By Anubhav Mishra</span>
+                  <button class="watch-now-btn">WATCH NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses" onclick="toggleCourse(this, 'up');">
+            <span class="course-name">👉&nbsp; UP Class 10</span>
+            <span class="tab-toggler">
+              <ion-icon name="add-outline"></ion-icon>
+            </span>
+          </div>
+          <div class="course-detail-container-small" style="border-top: none; border-bottom: 1px solid #d4d4d6;" id="up">
+            <span class="course-detail-container-heading-small">UP English Medium Class 10</span>
+            <div class="subject">
+              <div class="subject-image" style="
+                      background: url(images/physics.jpg);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Physics</span><span class="subject-teacher">By Shivansh Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="
+                      background: url(images/chemistry.jpg);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Chemistry</span><span class="subject-teacher">By Shashank Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="background: url(images/biology.webp);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Biology</span><span class="subject-teacher">By Shashank Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="background: url(images/mathematics.webp);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Mathematics</span><span class="subject-teacher">By Anubhav Mishra</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course-detail-container">
+          <div class="course-detail-container-large" id="cbse-large">
+            <span class="course-detail-container-heading-large">CBSE English Medium Class 10</span>
+            <div class="subject">
+              <div class="subject-image" style="
+                                  background: url(images/physics.jpg);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Physics</span><span class="subject-teacher">By Shivansh Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="
+                                  background: url(images/chemistry.jpg);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Chemistry</span><span class="subject-teacher">By Shashank Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="background: url(images/biology.webp);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Biology</span><span class="subject-teacher">By Shashank Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="background: url(images/mathematics.webp);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Mathematics</span><span class="subject-teacher">By Anubhav Mishra</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-detail-container-large" id="up-large">
+            <span class="course-detail-container-heading-large">UP English Medium Class 10</span>
+            <div class="subject">
+              <div class="subject-image" style="
+                                  background: url(images/physics.jpg);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Physics</span><span class="subject-teacher">By Shivansh Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="
+                                  background: url(images/chemistry.jpg);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Chemistry</span><span class="subject-teacher">By Shashank Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="background: url(images/biology.webp);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Biology</span><span class="subject-teacher">By Shashank Tripathi</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+            <div class="subject">
+              <div class="subject-image" style="background: url(images/mathematics.webp);"></div>
+              <div class="subject-details">
+                <span class="subject-name">Mathematics</span><span class="subject-teacher">By Anubhav Mishra</span>
+                <button class="watch-now-btn">WATCH NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="channel-section">
+      <h1 class="section-heading">Our YouTube Channels</h1>
+      <div class="channel-container">
+        <div class="channel-logo"></div>
+        <div class="channel-details">
+          <span class="channel-name">Subject Academy Learner</span>
+          <span style="color: grey;font-size: 13px;">1.81K Subscribers</span>
+          <a href="https://youtube.com/@SubjectAcademyLearner?subscribe=1">
+            <button class="subscribe-btn">SUBSCRIBE NOW</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="notes-section">
+      <h1 class="section-heading">Grab Notes</h1>
+      <div class="notes-wrapper">
+        <div class="notes-container">
+          <img src="images/list-icon.png" alt="" class="notes-icon">
+          <div class="notes-details">
+            <span class="notes-name">CBSE Board Class 10 Notes</span>
+            <a href="#" class="notes-link">Grab Notes here</a>
+          </div>
+        </div>
+        <div class="notes-container">
+          <img src="images/list-icon.png" alt="" class="notes-icon">
+          <div class="notes-details">
+            <span class="notes-name">UP Board Class 10 Notes</span>
+            <a href="#" class="notes-link">Grab Notes here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="features-wrapper">
+        <div class="features-container">
+          <img src="images/01.png" alt="">
+          <div class="feature">100% Free School Education</div>
+        </div>
+        <div class="features-container">
+          <img src="images/02.png" alt="">
+          <div class="feature">Complete Free Courses</div>
+        </div>
+        <div class="features-container">
+          <img src="images/03.png" alt="">
+          <div class="feature">All Types of Books Covered</div>
+        </div>
+        <div class="features-container">
+          <img src="images/04.png" alt="">
+          <div class="feature">Useful for 10th Board Exams</div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <h1 class="section-heading">Frequently Asked Questions</h1>
+      <div class="faq-wrapper">
+        <div class="faq-container">
+          <div class="faq" style="font-weight: 500;">Why choose us?</div>
+          <span class="tab-toggler" style="height: 19px;"><ion-icon name="chevron-down-outline" style="width: 19px"></ion-icon></span>
+          <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae harum fugit accusamus, minus tempora voluptas voluptatum deserunt, consectetur eos sed modi, molestias voluptatibus atque laboriosam. Est earum fugiat consequuntur!</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq" style="font-weight: 500;">Our Vision?</div>
+          <span class="tab-toggler" style="height: 19px;"><ion-icon name="chevron-down-outline" style="width: 19px"></ion-icon></span>
+          <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae harum fugit accusamus, minus tempora voluptas voluptatum deserunt, consectetur eos sed modi, molestias voluptatibus atque laboriosam. Est earum fugiat consequuntur!</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq" style="font-weight: 500;">What do we provide?</div>
+          <span class="tab-toggler" style="height: 19px;"><ion-icon name="chevron-down-outline" style="width: 19px"></ion-icon></span>
+          <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae harum fugit accusamus, minus tempora voluptas voluptatum deserunt, consectetur eos sed modi, molestias voluptatibus atque laboriosam. Est earum fugiat consequuntur!</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq" style="font-weight: 500;">How to get our notes?</div>
+          <span class="tab-toggler" style="height: 19px;"><ion-icon name="chevron-down-outline" style="width: 19px"></ion-icon></span>
+          <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae harum fugit accusamus, minus tempora voluptas voluptatum deserunt, consectetur eos sed modi, molestias voluptatibus atque laboriosam. Est earum fugiat consequuntur!</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq" style="font-weight: 500;">How to contact us?</div>
+          <span class="tab-toggler" style="height: 19px;"><ion-icon name="chevron-down-outline" style="width: 19px"></ion-icon></span>
+          <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae harum fugit accusamus, minus tempora voluptas voluptatum deserunt, consectetur eos sed modi, molestias voluptatibus atque laboriosam. Est earum fugiat consequuntur!</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h1 class="logo" style="color: white;">Logo</h1>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, fugit.
+  </footer>
+  <!-- Project -->
+  <script src="main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
